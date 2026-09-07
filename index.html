@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nova - Modern Demo Website</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="container nav-content">
+            <a href="#" class="logo">Nova<span>.</span></a>
+
+            <nav id="navMenu">
+                <a href="#home">Home</a>
+                <a href="#features">Features</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <button class="menu-btn" id="menuBtn">☰</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+
+        <section class="hero" id="home">
+            <div class="container hero-content">
+
+                <div class="hero-text">
+                    <p class="badge">✨ Welcome to Nova</p>
+
+                    <h1>
+                        Build something
+                        <span>amazing.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        A beautiful and responsive demo website built using
+                        simple HTML, CSS, and JavaScript.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#features" class="btn primary-btn">
+                            Explore Features
+                        </a>
+
+                        <a href="#about" class="btn secondary-btn">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-card">
+                    <div class="card-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+
+                    <div class="code-window">
+                        <p><span class="purple">const</span> website = {</p>
+                        <p class="indent">
+                            name: <span class="green">"Nova"</span>,
+                        </p>
+                        <p class="indent">
+                            modern: <span class="orange">true</span>,
+                        </p>
+                        <p class="indent">
+                            responsive: <span class="orange">true</span>,
+                        </p>
+                        <p class="indent">
+                            awesome: <span class="orange">true</span>
+                        </p>
+                        <p>};</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Features -->
+        <section class="features" id="features">
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="section-label">FEATURES</p>
+                    <h2>Everything you need</h2>
+                    <p>
+                        Simple tools and thoughtful design to create
+                        something great.
+                    </p>
+                </div>
+
+                <div class="feature-grid">
+
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Fast</h3>
+                        <p>
+                            Lightweight code that loads quickly and
+                            provides a smooth experience.
+                        </p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">📱</div>
+                        <h3>Responsive</h3>
+                        <p>
+                            Looks great on desktops, tablets, and
+                            mobile devices.
+                        </p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">🎨</div>
+                        <h3>Beautiful</h3>
+                        <p>
+                            A clean modern interface with attractive
+                            colors and animations.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="about" id="about">
+            <div class="container about-content">
+
+                <div>
+                    <p class="section-label">ABOUT NOVA</p>
+
+                    <h2>Simple code.<br>Beautiful results.</h2>
+                </div>
+
+                <div class="about-text">
+                    <p>
+                        Nova is a simple demo project designed to show
+                        how HTML, CSS, and JavaScript can work together
+                        to create a modern website.
+                    </p>
+
+                    <p>
+                        You can customize the colors, sections,
+                        animations, and content to turn this demo into
+                        your own project.
+                    </p>
+
+                    <button class="btn primary-btn" id="alertBtn">
+                        Click Me
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="contact" id="contact">
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="section-label">CONTACT</p>
+                    <h2>Let's connect</h2>
+                    <p>
+                        Have an idea? Send us a message.
+                    </p>
+                </div>
+
+                <form id="contactForm" class="contact-form">
+
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Enter your name"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Enter your email"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea
+                            id="message"
+                            rows="5"
+                            placeholder="Write your message..."
+                            required
+                        ></textarea>
+                    </div>
+
+                    <button type="submit" class="btn primary-btn">
+                        Send Message
+                    </button>
+
+                    <p id="formMessage"></p>
+
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <p>© 2026 Nova. All rights reserved.</p>
+
+            <div class="social-links">
+                <a href="#">GitHub</a>
+                <a href="#">Twitter</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
